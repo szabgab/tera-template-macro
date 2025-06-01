@@ -32,7 +32,7 @@ async fn index() -> impl IntoResponse {
     };
     
     // axum::response::Html
-    Html(context.render(TERA.read().unwrap().clone()))
+    Html(context.render(&TERA.read().unwrap()))
 }
 ```
 

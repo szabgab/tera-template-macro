@@ -84,7 +84,7 @@ fn expand_struct(s: Struct) -> proc_macro2::TokenStream {
     quote! {
         #[automatically_derived]
         impl #name {
-            fn render(&self, tera: tera::Tera) -> String {
+            fn render(&self, tera: &tera::Tera) -> String {
                 let context = tera::Context::from_serialize(self).expect("Failed to create context");
                 let rendered =  tera
                     .render(#path, &context)
