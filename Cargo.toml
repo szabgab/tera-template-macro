@@ -4,7 +4,7 @@ version = "0.1.4"
 authors=["Tebarem"]
 edition = "2021"
 description = "Proc Macro for tera-hot-reload crate"
-homepage = "https://github.com/oxidlabs/tera-template-macro"
+repository = "https://github.com/oxidlabs/tera-template-macro"
 license = "MIT"
 keywords = ["tera", "template"]
 
